@@ -14,15 +14,38 @@ eventsApp.controller('EventController',
                 imageUrl: '/img/angularjs-logo.png',
                 sessions: [
                     {
-                        name: 'Directives Master Class'
+                        name: 'Directives Master Class',
+                        creatorName: 'David',
+                        duration: '1 hr',
+                        level: 'Advanced',
+                        abstract: 'In this session you will learn the ins and out of directives!',
+                        upVoteCount: 0
                     },
                     {
-                        name: 'Scopes for fun and profit'
+                        name: 'Scopes for fun and profit',
+                        creatorName: 'John',
+                        duration: '30 mins',
+                        level: 'Introductory',
+                        abstract: 'In this session you will learn the ins and out of scopes!',
+                        upVoteCount: 0
                     },
                     {
-                        name: 'Well behaved Controllers'
+                        name: 'Well behaved Controllers',
+                        creatorName: 'Ganesh',
+                        duration: '1.5 hr',
+                        level: 'Intermediate',
+                        abstract: 'In this session you will learn the ins and out of controllers!',
+                        upVoteCount: 0
                     }
                 ]
+            }
+
+            $scope.upVoteSession = function(session){
+                session.upVoteCount++;
+            };
+
+            $scope.downVoteSession = function(session){
+                session.upVoteCount--;
             }
         }    
 );
