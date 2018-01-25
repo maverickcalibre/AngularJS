@@ -24,6 +24,11 @@
                         <h2 ng-style="myStyle" ng-bind-template="{{event.name}} {{event.date}}"></h2>
                     </div>
                 </div>
+
+                <button class="btn" ng-disabled="buttonDisabled">Disabled</button>
+
+                <div ng-non-bindable>{{1 + 2}}</div>
+
                 <div ng-bind-html-unsafe="snippet">some title</div>
                 <div ng-bind-html="snippet">some title</div>
                 <h2 ng-class="myClass" ng-show="boolValue">Show this</h2>
