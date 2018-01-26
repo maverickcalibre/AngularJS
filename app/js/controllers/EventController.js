@@ -9,7 +9,7 @@ eventsApp.controller('EventController',
             $scope.buttonDisabled = true;
             $scope.event = {
                 name: "Angular boot camp",
-                date: '1/1/2017',
+                date: 1359781015626,//'1/1/2017',
                 time: '12:07 am',
                 location: {
                     address: 'Cypress bend Dr',
