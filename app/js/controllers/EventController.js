@@ -20,7 +20,7 @@ eventsApp.controller('EventController',
                 imageUrl: '/img/angularjs-logo.png',
                 sessions: [
                     {
-                        name: 'Directives Master Class',
+                        name: 'Directives Master Class Introductory',
                         creatorName: 'David',
                         duration: '1 hr',
                         level: 'Advanced',
