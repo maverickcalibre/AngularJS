@@ -19,3 +19,20 @@ eventsApp.filter('durations', function(){
     }
 
 });
+
+eventsApp.filter('levels', function(){
+    return function(level){
+        switch (level) {
+            case 'Introductory':
+                return '/img/Introductory.png';
+                break;
+            case 'Intermediate':
+                return '/img/Intermediate.png';
+                break;
+            case 'Advanced':
+                return '/img/Advanced.png';
+                break;            
+        }
+    }
+
+});

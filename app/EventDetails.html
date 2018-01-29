@@ -93,7 +93,7 @@
                                 <h6 style="margin-top:-10px">{{session.creatorName}}</h6>
                                 <span>Duration: {{session.duration | durations}}</span>
                                 <br/>
-                                <span>Level: {{session.level}}</span>
+                                <span>Level: <img ng-src="{{session.level | levels}}" alt="{{session.level}}"></span>
 
                                 <p>{{session.abstract}}</p>
                             </div>
